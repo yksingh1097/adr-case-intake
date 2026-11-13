@@ -1,0 +1,233 @@
+{
+  "document_id" : "D07",
+  "catalog_version" : "1.0",
+  "model" : "gemini/gemini-3.5-flash-lite",
+  "flags" : [ ],
+  "cases" : [
+    {
+      "case_index" : 0,
+      "label" : "Jenna",
+      "fields" : {
+        "patient_initials" : {
+          "status" : "extracted",
+          "value" : "JMH",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "From: jenna.m.hartley@example-mail.com",
+              "start" : 0,
+              "end" : 38
+            }
+          ]
+        },
+        "patient_age_years" : {
+          "status" : "extracted",
+          "value" : 38,
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "I'm a 38 year old woman from Columbus, Ohio",
+              "start" : 342,
+              "end" : 385
+            }
+          ]
+        },
+        "patient_sex" : {
+          "status" : "extracted",
+          "value" : "female",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "I'm a 38 year old woman from Columbus, Ohio",
+              "start" : 342,
+              "end" : 385
+            }
+          ]
+        },
+        "suspect_drug_name" : {
+          "status" : "extracted",
+          "value" : "paroxetine",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "side effects from the paroxetine your company makes",
+              "start" : 231,
+              "end" : 282
+            },
+            {
+              "quote" : "My doctor put me on paroxetine 20 mg",
+              "start" : 387,
+              "end" : 423
+            }
+          ]
+        },
+        "suspect_drug_dose_value" : {
+          "status" : "extracted",
+          "value" : 20,
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "paroxetine 20 mg, one tablet every morning",
+              "start" : 407,
+              "end" : 449
+            }
+          ]
+        },
+        "suspect_drug_dose_unit" : {
+          "status" : "extracted",
+          "value" : "mg",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "paroxetine 20 mg, one tablet every morning",
+              "start" : 407,
+              "end" : 449
+            }
+          ]
+        },
+        "suspect_drug_route" : {
+          "status" : "extracted",
+          "value" : "oral",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "paroxetine 20 mg, one tablet every morning",
+              "start" : 407,
+              "end" : 449
+            }
+          ]
+        },
+        "suspect_drug_start_date" : {
+          "status" : "extracted",
+          "value" : "2026-03-30",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "started it on March 30th, 2026",
+              "start" : 497,
+              "end" : 527
+            }
+          ]
+        },
+        "event_terms" : {
+          "status" : "extracted",
+          "value" : [
+            "insomnia",
+            "suicidal ideation"
+          ],
+          "confidence" : "medium",
+          "provenance" : [
+            {
+              "quote" : "stopped sleeping",
+              "start" : 627,
+              "end" : 643
+            },
+            {
+              "quote" : "started having thoughts about not wanting to be alive",
+              "start" : 720,
+              "end" : 773
+            }
+          ]
+        },
+        "event_onset_date" : {
+          "status" : "extracted",
+          "value" : "2026-04-06",
+          "confidence" : "medium",
+          "provenance" : [
+            {
+              "quote" : "started it on March 30th, 2026",
+              "start" : 497,
+              "end" : 527
+            },
+            {
+              "quote" : "About a week and a half in I basically stopped sleeping",
+              "start" : 588,
+              "end" : 643
+            }
+          ]
+        },
+        "event_outcome" : {
+          "status" : "extracted",
+          "value" : "not_recovered",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "The sleep is a little better but the dark thoughts are still there",
+              "start" : 1146,
+              "end" : 1212
+            }
+          ]
+        },
+        "seriousness_criteria" : {
+          "status" : "extracted",
+          "value" : [
+            "hospitalization"
+          ],
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "admitted me to the hospital's psychiatric unit for two nights, April 24th to April 26th",
+              "start" : 903,
+              "end" : 990
+            }
+          ]
+        },
+        "reporter_type" : {
+          "status" : "extracted",
+          "value" : "consumer",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "everything above is what actually happened to me",
+              "start" : 1591,
+              "end" : 1639
+            },
+            {
+              "quote" : "jenna",
+              "start" : 6,
+              "end" : 11
+            }
+          ]
+        },
+        "report_date" : {
+          "status" : "extracted",
+          "value" : "2026-04-27",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Date: Monday, 27 April 2026, 9:12 PM",
+              "start" : 140,
+              "end" : 176
+            }
+          ]
+        },
+        "country" : {
+          "status" : "extracted",
+          "value" : "US",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Columbus, Ohio",
+              "start" : 371,
+              "end" : 385
+            }
+          ]
+        },
+        "concomitant_drugs" : {
+          "status" : "extracted",
+          "value" : [
+            "multivitamin"
+          ],
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "I'm not taking anything else except a daily multivitamin",
+              "start" : 529,
+              "end" : 585
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "document_id" : "D03",
+  "catalog_version" : "1.0",
+  "model" : "gemini/gemini-3.5-flash-lite",
+  "flags" : [ ],
+  "cases" : [
+    {
+      "case_index" : 0,
+      "label" : "Patient",
+      "fields" : {
+        "patient_initials" : {
+          "status" : "unknown"
+        },
+        "patient_age_years" : {
+          "status" : "extracted",
+          "value" : 45,
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Age: 45",
+              "start" : 305,
+              "end" : 312
+            }
+          ]
+        },
+        "patient_sex" : {
+          "status" : "extracted",
+          "value" : "male",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Sex: Male",
+              "start" : 313,
+              "end" : 322
+            }
+          ]
+        },
+        "suspect_drug_name" : {
+          "status" : "extracted",
+          "value" : "ibuprofen",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Ibuprofen 400 mg tablets, one tablet by mouth three times a day with food, prescribed for mechanical low back pain",
+              "start" : 355,
+              "end" : 469
+            }
+          ]
+        },
+        "suspect_drug_dose_value" : {
+          "status" : "extracted",
+          "value" : 400,
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Ibuprofen 400 mg tablets",
+              "start" : 355,
+              "end" : 379
+            }
+          ]
+        },
+        "suspect_drug_dose_unit" : {
+          "status" : "extracted",
+          "value" : "mg",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Ibuprofen 400 mg tablets",
+              "start" : 355,
+              "end" : 379
+            }
+          ]
+        },
+        "suspect_drug_route" : {
+          "status" : "extracted",
+          "value" : "oral",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "one tablet by mouth",
+              "start" : 381,
+              "end" : 400
+            }
+          ]
+        },
+        "suspect_drug_start_date" : {
+          "status" : "extracted",
+          "value" : "2026-04-03",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Treatment started: 03/04/2026",
+              "start" : 471,
+              "end" : 500
+            }
+          ]
+        },
+        "event_terms" : {
+          "status" : "extracted",
+          "value" : [
+            "black tarry stools",
+            "feeling faint",
+            "upper gastrointestinal bleed",
+            "duodenal ulcer"
+          ],
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "On 28/04/2026 the patient passed black tarry stools and felt faint",
+              "start" : 541,
+              "end" : 607
+            },
+            {
+              "quote" : "an upper gastrointestinal bleed from a duodenal ulcer was confirmed by endoscopy",
+              "start" : 666,
+              "end" : 746
+            }
+          ]
+        },
+        "event_onset_date" : {
+          "status" : "extracted",
+          "value" : "2026-04-28",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "On 28/04/2026 the patient passed black tarry stools and felt faint",
+              "start" : 541,
+              "end" : 607
+            }
+          ]
+        },
+        "event_outcome" : {
+          "status" : "extracted",
+          "value" : "recovered",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Recovered. Seen in the practice on 13/05/2026, well, haemoglobin 118 g/L",
+              "start" : 994,
+              "end" : 1066
+            }
+          ]
+        },
+        "seriousness_criteria" : {
+          "status" : "extracted",
+          "value" : [
+            "hospitalization",
+            "life_threatening",
+            "other_medically_important"
+          ],
+          "confidence" : "medium",
+          "provenance" : [
+            {
+              "quote" : "upper gastrointestinal bleed from a duodenal ulcer",
+              "start" : 669,
+              "end" : 719
+            },
+            {
+              "quote" : "Haemoglobin on arrival 84 g/L. He received two units of blood",
+              "start" : 748,
+              "end" : 809
+            },
+            {
+              "quote" : "admitted for three nights",
+              "start" : 845,
+              "end" : 870
+            }
+          ]
+        },
+        "reporter_type" : {
+          "status" : "extracted",
+          "value" : "nurse",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Sarah Ellison, Advanced Nurse Practitioner (independent prescriber)",
+              "start" : 184,
+              "end" : 251
+            }
+          ]
+        },
+        "report_date" : {
+          "status" : "extracted",
+          "value" : "2026-05-15",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Report completed: 15/05/2026 (15 May 2026)",
+              "start" : 131,
+              "end" : 173
+            }
+          ]
+        },
+        "country" : {
+          "status" : "extracted",
+          "value" : "GB",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Stockport, Greater Manchester, United Kingdom",
+              "start" : 84,
+              "end" : 129
+            }
+          ]
+        },
+        "concomitant_drugs" : {
+          "status" : "extracted",
+          "value" : [ ],
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "None. The patient does not take any regular medication and denies over-the-counter aspirin use",
+              "start" : 889,
+              "end" : 983
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

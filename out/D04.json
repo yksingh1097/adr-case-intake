@@ -1,0 +1,418 @@
+{
+  "document_id" : "D04",
+  "catalog_version" : "1.0",
+  "model" : "gemini/gemini-3.5-flash-lite",
+  "flags" : [
+    "multiple_patients"
+  ],
+  "cases" : [
+    {
+      "case_index" : 0,
+      "label" : "Mrs P.R.D.",
+      "fields" : {
+        "patient_initials" : {
+          "status" : "extracted",
+          "value" : "PRD",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Mrs P.R.D",
+              "start" : 405,
+              "end" : 414
+            }
+          ]
+        },
+        "patient_age_years" : {
+          "status" : "extracted",
+          "value" : 29,
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Mrs P.R.D., 29 years old",
+              "start" : 405,
+              "end" : 429
+            }
+          ]
+        },
+        "patient_sex" : {
+          "status" : "extracted",
+          "value" : "female",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "mother",
+              "start" : 209,
+              "end" : 215
+            },
+            {
+              "quote" : "Mrs P.R.D",
+              "start" : 405,
+              "end" : 414
+            }
+          ]
+        },
+        "suspect_drug_name" : {
+          "status" : "extracted",
+          "value" : "sertraline",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "taking sertraline 50 mg",
+              "start" : 435,
+              "end" : 458
+            }
+          ]
+        },
+        "suspect_drug_dose_value" : {
+          "status" : "extracted",
+          "value" : 50,
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "sertraline 50 mg",
+              "start" : 442,
+              "end" : 458
+            }
+          ]
+        },
+        "suspect_drug_dose_unit" : {
+          "status" : "extracted",
+          "value" : "mg",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "sertraline 50 mg",
+              "start" : 442,
+              "end" : 458
+            }
+          ]
+        },
+        "suspect_drug_route" : {
+          "status" : "extracted",
+          "value" : "oral",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "tablets orally",
+              "start" : 459,
+              "end" : 473
+            }
+          ]
+        },
+        "suspect_drug_start_date" : {
+          "status" : "extracted",
+          "value" : "2025-10-14",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "started by her psychiatrist on 14 October 2025",
+              "start" : 529,
+              "end" : 575
+            }
+          ]
+        },
+        "event_terms" : {
+          "status" : "extracted",
+          "value" : [
+            "headache",
+            "confusion",
+            "vomiting",
+            "hyponatraemia"
+          ],
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "she presented with headache, confusion and one episode of vomiting",
+              "start" : 788,
+              "end" : 854
+            },
+            {
+              "quote" : "A diagnosis of hyponatraemia secondary to sertraline (SIADH) was made",
+              "start" : 885,
+              "end" : 954
+            }
+          ]
+        },
+        "event_onset_date" : {
+          "status" : "extracted",
+          "value" : "2026-05-22",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "At 36 weeks of gestation, on 22 May 2026, she presented with headache",
+              "start" : 746,
+              "end" : 815
+            }
+          ]
+        },
+        "event_outcome" : {
+          "status" : "extracted",
+          "value" : "recovered",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "She has recovered",
+              "start" : 1069,
+              "end" : 1086
+            }
+          ]
+        },
+        "seriousness_criteria" : {
+          "status" : "extracted",
+          "value" : [
+            "hospitalization"
+          ],
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Both patients remain in hospital at the time of this report",
+              "start" : 1665,
+              "end" : 1724
+            }
+          ]
+        },
+        "reporter_type" : {
+          "status" : "extracted",
+          "value" : "physician",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Dr Meera Kulkarni, MD (Obstetrics)",
+              "start" : 1746,
+              "end" : 1780
+            },
+            {
+              "quote" : "Dr Sanjay Pathak, DM (Neonatology)",
+              "start" : 1781,
+              "end" : 1815
+            }
+          ]
+        },
+        "report_date" : {
+          "status" : "extracted",
+          "value" : "2026-06-08",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Date: 8 June 2026",
+              "start" : 92,
+              "end" : 109
+            }
+          ]
+        },
+        "country" : {
+          "status" : "extracted",
+          "value" : "IN",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Pune, Maharashtra, India",
+              "start" : 66,
+              "end" : 90
+            }
+          ]
+        },
+        "concomitant_drugs" : {
+          "status" : "extracted",
+          "value" : [
+            "iron",
+            "folic acid"
+          ],
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "routine iron and folic acid supplements",
+              "start" : 704,
+              "end" : 743
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_index" : 1,
+      "label" : "Infant",
+      "fields" : {
+        "patient_initials" : {
+          "status" : "extracted",
+          "value" : "RD",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Baby R.D",
+              "start" : 1134,
+              "end" : 1142
+            }
+          ]
+        },
+        "patient_age_years" : {
+          "status" : "extracted",
+          "value" : 0,
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "delivered at 38 weeks on 3 June 2026",
+              "start" : 1150,
+              "end" : 1186
+            },
+            {
+              "quote" : "Date: 8 June 2026",
+              "start" : 92,
+              "end" : 109
+            }
+          ]
+        },
+        "patient_sex" : {
+          "status" : "extracted",
+          "value" : "male",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "The baby, a boy",
+              "start" : 1096,
+              "end" : 1111
+            }
+          ]
+        },
+        "suspect_drug_name" : {
+          "status" : "extracted",
+          "value" : "sertraline",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "exposure to sertraline",
+              "start" : 1468,
+              "end" : 1490
+            }
+          ]
+        },
+        "suspect_drug_dose_value" : {
+          "status" : "unknown"
+        },
+        "suspect_drug_dose_unit" : {
+          "status" : "unknown"
+        },
+        "suspect_drug_route" : {
+          "status" : "unknown"
+        },
+        "suspect_drug_start_date" : {
+          "status" : "unknown"
+        },
+        "event_terms" : {
+          "status" : "extracted",
+          "value" : [
+            "jitteriness",
+            "high-pitched cry",
+            "poor feeding",
+            "respiratory distress",
+            "neonatal adaptation syndrome"
+          ],
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "he developed jitteriness, a high-pitched cry, poor feeding and mild respiratory distress",
+              "start" : 1252,
+              "end" : 1340
+            },
+            {
+              "quote" : "The neonatology team diagnosed neonatal adaptation syndrome",
+              "start" : 1385,
+              "end" : 1444
+            }
+          ]
+        },
+        "event_onset_date" : {
+          "status" : "extracted",
+          "value" : "2026-06-03",
+          "confidence" : "medium",
+          "provenance" : [
+            {
+              "quote" : "delivered at 38 weeks on 3 June 2026 with a birth weight of 2.9 kg. Within the first 24 hours of life he developed jitteriness",
+              "start" : 1150,
+              "end" : 1276
+            }
+          ]
+        },
+        "event_outcome" : {
+          "status" : "extracted",
+          "value" : "recovering",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "The symptoms are settling; at the time of writing he is feeding better",
+              "start" : 1541,
+              "end" : 1611
+            }
+          ]
+        },
+        "seriousness_criteria" : {
+          "status" : "extracted",
+          "value" : [
+            "hospitalization"
+          ],
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Both patients remain in hospital at the time of this report",
+              "start" : 1665,
+              "end" : 1724
+            }
+          ]
+        },
+        "reporter_type" : {
+          "status" : "extracted",
+          "value" : "physician",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Dr Meera Kulkarni, MD (Obstetrics)",
+              "start" : 1746,
+              "end" : 1780
+            },
+            {
+              "quote" : "Dr Sanjay Pathak, DM (Neonatology)",
+              "start" : 1781,
+              "end" : 1815
+            }
+          ]
+        },
+        "report_date" : {
+          "status" : "extracted",
+          "value" : "2026-06-08",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Date: 8 June 2026",
+              "start" : 92,
+              "end" : 109
+            }
+          ]
+        },
+        "country" : {
+          "status" : "extracted",
+          "value" : "IN",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Pune, Maharashtra, India",
+              "start" : 66,
+              "end" : 90
+            }
+          ]
+        },
+        "concomitant_drugs" : {
+          "status" : "extracted",
+          "value" : [ ],
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "The infant did not receive any medicine himself",
+              "start" : 1492,
+              "end" : 1539
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

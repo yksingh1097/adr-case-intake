@@ -1,0 +1,273 @@
+{
+  "document_id" : "D08",
+  "catalog_version" : "1.0",
+  "model" : "gemini/gemini-3.5-flash-lite",
+  "flags" : [ ],
+  "cases" : [
+    {
+      "case_index" : 0,
+      "label" : "H.M.N.",
+      "fields" : {
+        "patient_initials" : {
+          "status" : "extracted",
+          "value" : "HMN",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Initials: H.M.N",
+              "start" : 717,
+              "end" : 732
+            }
+          ]
+        },
+        "patient_age_years" : {
+          "status" : "extracted",
+          "value" : 72,
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Date of birth: 1953 (age 72 years at the time of the events described below)",
+              "start" : 746,
+              "end" : 822
+            }
+          ]
+        },
+        "patient_sex" : {
+          "status" : "extracted",
+          "value" : "female",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Sex: Female",
+              "start" : 734,
+              "end" : 745
+            }
+          ]
+        },
+        "suspect_drug_name" : {
+          "status" : "extracted",
+          "value" : "methotrexate",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Methotrexate 2.5 mg tablets (oral)",
+              "start" : 1832,
+              "end" : 1866
+            }
+          ]
+        },
+        "suspect_drug_dose_value" : {
+          "status" : "extracted",
+          "value" : 20,
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "The treating rheumatologist increased the dose of methotrexate to 20 mg orally once weekly from that date",
+              "start" : 2454,
+              "end" : 2559
+            }
+          ]
+        },
+        "suspect_drug_dose_unit" : {
+          "status" : "extracted",
+          "value" : "mg",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "The treating rheumatologist increased the dose of methotrexate to 20 mg orally once weekly from that date",
+              "start" : 2454,
+              "end" : 2559
+            }
+          ]
+        },
+        "suspect_drug_route" : {
+          "status" : "extracted",
+          "value" : "oral",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Methotrexate 2.5 mg tablets (oral)",
+              "start" : 1832,
+              "end" : 1866
+            }
+          ]
+        },
+        "suspect_drug_start_date" : {
+          "status" : "extracted",
+          "value" : "2025-10-07",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Methotrexate was started by the rheumatology service on 7 October 2025 at a dose of 15 mg orally once weekly",
+              "start" : 1869,
+              "end" : 1977
+            }
+          ]
+        },
+        "event_terms" : {
+          "status" : "extracted",
+          "value" : [
+            "bone marrow suppression",
+            "oral mucositis",
+            "pancytopenia",
+            "neutropenic sepsis",
+            "bilateral pneumonia",
+            "septic shock"
+          ],
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "developed severe bone marrow suppression during treatment with low-dose weekly methotrexate",
+              "start" : 400,
+              "end" : 491
+            },
+            {
+              "quote" : "Extensive oral mucositis with confluent ulceration of the buccal mucosa, tongue and soft palate",
+              "start" : 4455,
+              "end" : 4550
+            },
+            {
+              "quote" : "Full blood count on arrival: haemoglobin 82 g/L, white cell count 0.6 x 10^9/L, absolute neutrophil count 0.1 x 10^9/L, platelet count 14 x 10^9/L. Blood film: pancytopenia",
+              "start" : 4721,
+              "end" : 4893
+            },
+            {
+              "quote" : "Methotrexate toxicity with pancytopenia, severe oral mucositis and neutropenic sepsis",
+              "start" : 5603,
+              "end" : 5688
+            },
+            {
+              "quote" : "1a. Bilateral pneumonia with septic shock",
+              "start" : 10241,
+              "end" : 10282
+            }
+          ]
+        },
+        "event_onset_date" : {
+          "status" : "extracted",
+          "value" : "2026-03-19",
+          "confidence" : "medium",
+          "provenance" : [
+            {
+              "quote" : "On 24 March 2026 the patient presented to the emergency department with a five-day history of painful mouth ulcers, difficulty swallowing, fatigue and easy bruising on the forearms",
+              "start" : 3908,
+              "end" : 4088
+            }
+          ]
+        },
+        "event_outcome" : {
+          "status" : "extracted",
+          "value" : "fatal",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Fatal",
+              "start" : 10174,
+              "end" : 10179
+            }
+          ]
+        },
+        "seriousness_criteria" : {
+          "status" : "extracted",
+          "value" : [
+            "death",
+            "life_threatening",
+            "hospitalization"
+          ],
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Death                          Yes",
+              "start" : 10535,
+              "end" : 10569
+            },
+            {
+              "quote" : "Life-threatening               Yes",
+              "start" : 10572,
+              "end" : 10606
+            },
+            {
+              "quote" : "Hospitalisation                Yes (admitted 24 March 2026, died in hospital 30 March 2026)",
+              "start" : 10609,
+              "end" : 10700
+            }
+          ]
+        },
+        "reporter_type" : {
+          "status" : "extracted",
+          "value" : "physician",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Dr Priya Natarajan, Consultant Rheumatologist (reporting clinician)",
+              "start" : 12385,
+              "end" : 12452
+            }
+          ]
+        },
+        "report_date" : {
+          "status" : "extracted",
+          "value" : "2026-04-14",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Date of this report: 14 April 2026",
+              "start" : 12549,
+              "end" : 12583
+            }
+          ]
+        },
+        "country" : {
+          "status" : "extracted",
+          "value" : "NZ",
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Wellington, New Zealand",
+              "start" : 82,
+              "end" : 105
+            }
+          ]
+        },
+        "concomitant_drugs" : {
+          "status" : "extracted",
+          "value" : [
+            "folic acid",
+            "omeprazole",
+            "cilazapril",
+            "paracetamol",
+            "zoledronic acid"
+          ],
+          "confidence" : "high",
+          "provenance" : [
+            {
+              "quote" : "Folic acid          5 mg once weekly (Thursdays)    Oral    Oct 2025     Methotrexate supplementation",
+              "start" : 3103,
+              "end" : 3204
+            },
+            {
+              "quote" : "Omeprazole          20 mg once daily                Oral    2017         Reflux disease",
+              "start" : 3207,
+              "end" : 3294
+            },
+            {
+              "quote" : "Cilazapril          2.5 mg once daily               Oral    2008         Hypertension",
+              "start" : 3297,
+              "end" : 3382
+            },
+            {
+              "quote" : "Paracetamol         1 g up to four times daily PRN  Oral    2019         Arthritis pain",
+              "start" : 3385,
+              "end" : 3472
+            },
+            {
+              "quote" : "Zoledronic acid     5 mg once yearly                IV      2023         Osteoporosis (last Aug 2025)",
+              "start" : 3475,
+              "end" : 3576
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
