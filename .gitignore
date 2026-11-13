@@ -5,6 +5,10 @@ target/
 !**/src/test/**/target/
 assignment_files
 
+### Frontend ###
+node_modules/
+dist/
+
 ### STS ###
 .apt_generated
 .classpath
