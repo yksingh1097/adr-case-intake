@@ -1,5 +1,6 @@
 package dev.adrintake.repository;
 
+import dev.adrintake.config.RepoDirs;
 import dev.adrintake.model.DocumentDetail;
 import dev.adrintake.model.DocumentSummary;
 
@@ -34,21 +35,8 @@ public class FileDocumentRepository implements DocumentRepository {
     private final Path outDir;
 
     public FileDocumentRepository(@Value("${app.documents-dir:}") String documentsDir, @Value("${app.out-dir:}") String outDir) {
-        this.documentsDir = resolve(documentsDir, "documents"); 
-        this.outDir = resolve(outDir, "out");
-    }
-
-    private static Path resolve(String configured, String folder) {
-        if (!configured.isBlank()) {
-            return Path.of(configured);
-        }
-        for (String candidate : List.of(folder, "../" + folder)) {
-            Path path = Path.of(candidate);
-            if (Files.isDirectory(path)) {
-                return path;
-            }
-        }
-        return Path.of(folder);
+        this.documentsDir = RepoDirs.resolve(documentsDir, "documents");
+        this.outDir = RepoDirs.resolve(outDir, "out");
     }
 
     @Override
